@@ -17,7 +17,7 @@ namespace Web_CK.Controllers
         {
             return View();
         }
-
+        
         public IActionResult Privacy()
         {
             return View();
