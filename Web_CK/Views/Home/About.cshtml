@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Về chúng tôi";
+}
+
+<div class="container-fluid p-0 my-5">
+    <div class="text-center mb-5">
+        <img src="~/images/about-banner.jpg" class="img-fluid shadow-sm rounded" alt="Về chúng tôi" style="max-height: 500px; width: 85%; object-fit: cover;" />
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10 text-center">
+                <h2 class="display-3 fw-bold mb-4">Câu chuyện của chúng tôi</h2>
+                <p class="fs-4 text-muted px-3">
+                    Chào mừng bạn đến với chúng tôi. Chúng tôi cam kết mang lại những giá trị tốt nhất
+                    thông qua sự tận tâm và sáng tạo không ngừng trong từng sản phẩm.
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center mt-5 mb-5">
+            <div class="col-md-4 mb-4">
+                <div class="p-4 border-3 bg-white shadow-lg rounded h-100">
+                    <i class="bi bi-patch-check-fill display-4 text-success mb-3"></i>
+                    <h3 class="fw-bold">Chất lượng</h3>
+                    <p class="fs-5 text-secondary">Luôn đặt tiêu chuẩn cao nhất cho mọi sản phẩm ra mắt khách hàng.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 border-3 bg-white shadow-lg rounded h-100">
+                    <i class="bi bi-people-fill display-4 text-primary mb-3"></i>
+                    <h3 class="fw-bold">Phục Vụ Tận Tình</h3>
+                    <p class="fs-5 text-secondary">Những chuyên gia tận tụy, luôn sẵn sàng lắng nghe và thấu hiểu bạn.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 border-3 bg-white shadow-lg rounded h-100">
+                    <i class="bi bi-truck display-4 text-warning mb-3"></i>
+                    <h3 class="fw-bold">Miễn Phí Vận Chuyển</h3>
+                    <p class="fs-5 text-secondary">Giao hàng nhanh chóng và hoàn toàn miễn phí cho đơn hàng của bạn.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-5 my-5 align-items-center border-top">
+            <div class="col-md-6">
+                <h3 class="display-5 fw-bold mb-3">Tầm nhìn & Sứ mệnh</h3>
+                <p class=" fs-5 lh-base text-secondary">
+                    Chúng tôi không chỉ bán sản phẩm, chúng tôi trao gửi niềm tin. Mục tiêu lớn nhất của chúng tôi là trở thành
+                    người bạn đồng hành tin cậy, giúp nâng tầm chất lượng cuộc sống cho mỗi khách hàng thông qua những giải pháp tối ưu nhất.
+                </p>
+            </div>
+
+            <div class="col-md-6 px-4">
+                <div class="p-4 bg-light rounded-4 shadow-sm">
+                    <h4 class="fw-bold text-dark border-bottom pb-2 mb-3">Giá trị cốt lõi</h4>
+                    <ul class="list-unstyled fs-4 text-muted">
+                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Trung thực với khách hàng</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Không ngừng cải tiến sáng tạo</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Tôn trọng đồng nghiệp và đối tác</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <div class="bg-light p-5 text-center border rounded shadow-sm mx-auto my-5" style="width: 85%;">
+        <h2 class="display-5 fw-bold">Luôn Sẵn Sàng Phục Vụ</h2>
+        <p class="fs-4 mb-4 text-muted">Hãy liên hệ ngay để được tư vấn miễn phí.</p>
+        <a asp-controller="Home" asp-action="Contact" class="btn btn-dark btn-lg px-5 py-3 fs-5 shadow-lg">Liên hệ ngay</a>
+    </div>
+</div>

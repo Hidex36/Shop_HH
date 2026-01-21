@@ -1,54 +1,59 @@
-﻿<footer >
-    <div class="footer-container">
-        <div class="footer-logo">
-            <ul>
+﻿<footer class="bg-black text-light py-5 border-top border-secondary mt-5">
+    <div class="container-fluid" style="padding: 0 80px;">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-12">
+                <div class="mb-4">
+                    <img src="/img/logo.png" alt="Logo" style="height: 60px; object-fit: contain; filter: brightness(0) invert(1);">
+                </div>
+                <p class="text-secondary fs-5 lh-base pe-lg-5">
+                    Chúng tôi cung cấp những sản phẩm chất lượng nhất, mang lại giá trị bền vững cho khách hàng thông qua sự tận tâm và sáng tạo.
+                </p>
+            </div>
 
-            </ul>
+            <div class="col-lg-2 col-md-4">
+                <h4 class="fw-bold mb-4 text-white">Liên Kết</h4>
+                <ul class="list-unstyled fs-5">
+                    <li class="mb-3"><a asp-controller="Home" asp-action="Index" class="text-decoration-none text-secondary link-light">Trang Chủ</a></li>
+                    <li class="mb-3"><a asp-controller="Home" asp-action="About" class="text-decoration-none text-secondary link-light">Về Chúng Tôi</a></li>
+                    <li class="mb-3"><a asp-controller="Product" asp-action="Index" class="text-decoration-none text-secondary link-light">Sản Phẩm</a></li>
+                    <li class="mb-3"><a asp-controller="WishList" asp-action="Index" class="text-decoration-none text-secondary link-light">Yêu Thích</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4">
+                <h4 class="fw-bold mb-4 text-white">Tài Khoản</h4>
+                <ul class="list-unstyled text-secondary fs-5">
+                    <li class="mb-3"><a href="#" class="text-decoration-none text-secondary link-light">Tài Khoản</a></li>
+                    <li class="mb-3"><a href="#" class="text-decoration-none text-secondary link-light">Đăng Nhập</a></li>
+                    <li class="mb-3"><a href="#" class="text-decoration-none text-secondary link-light">Giỏ Hàng</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <h4 class="fw-bold mb-4 text-white">Liên Hệ</h4>
+                <ul class="list-unstyled text-secondary fs-5">
+                    <li class="d-flex mb-4">
+                        <i class="bi bi-geo-alt me-3 text-primary fs-5"></i>
+                        <span>123, đường Thống Nhất, Quận Gò Vấp, TP.HCM</span>
+                    </li>
+                    <li class="d-flex mb-4">
+                        <i class="bi bi-telephone me-3 text-primary fs-5"></i>
+                        <span>0987 654 321</span>
+                    </li>
+                    <li class="d-flex mb-4">
+                        <i class="bi bi-envelope me-3 text-primary fs-5"></i>
+                        <span>shopH123@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-col">
-            <ul>
-                <li>
-                    <a asp-controller="" asp-action="Index">Trang Chủ</a>
-                </li>
-                <li>
-                    <a asp-controller="" asp-action="Index">Sản Phẩm</a>
-                </li>
-                <li>
-                    <a asp-controller="" asp-action="Index">Danh Sách Yêu Thích</a>
-                </li>
-                <li>
-                    <a asp-controller="" asp-action="Index">Về Chúng tôi</a>
-                </li>
-                <li>
-                    <a asp-controller="" asp-action="Index">Liên Hệ</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-col"
-            <ul>
-                <li>
-                    <a asp-controller="" asp-action="Index"></a>
-                </li>
-                <li>
-                    <a asp-controller="" asp-action="Index"></a>
-                </li>
-                <li>
-                    <a asp-controller="" asp-action="Index"></a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <ul>
-                <li>
-                    <span>123, đường Thống Nhất, Quận blabla</span>
-                </li>
-                <li>
-                    <span>Phone: 0987654321.</span>
-                </li>
-                <li>
-                    <span>E-mail: shopH123@gmail.com</span>
-                </li>
-            </ul>
+
+        <hr class="border-secondary mt-5 mb-4">
+
+        <div class="row">
+            <div class="col-12 text-center text-secondary">
+                <p class="fs-6 mb-0">&copy; 2026 ShopH123. Thiết kế bởi Hải-Hiệp.</p>
+            </div>
         </div>
     </div>
 </footer>

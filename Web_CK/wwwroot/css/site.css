@@ -1,31 +1,79 @@
-html {
-  font-size: 14px;
+﻿html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+    height: 100%
+    /* Cuộn trang mượt mà */
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+    html {
+        font-size: 16px;
+    }
 }
 
 body {
-  margin-bottom: 60px;
+    display: flex;
+    margin-bottom: 60px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333; /* Màu chữ chính cho shop */
+    background-color: #f8f9fa;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+footer {
+    flex-shrink: 0;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+/* Khi di chuột vào vùng chứa dropdown thì hiện menu */
+/* Màu chữ khi hover trên nền đen */
+.nav-link-item:hover {
+    color: #bbb !important;
+}
+
+/* Tùy chỉnh mũi tên dropdown */
+.dropdown-toggle::after {
+    vertical-align: middle;
+    margin-left: 8px;
+    border-top: 0.35em solid; /* Độ dày mũi tên */
+}
+
+/* Nếu bạn không muốn icon User có mũi tên, hãy dùng class này */
+.no-caret::after {
+    display: none !important;
+}
+
+/* Đổi màu menu xổ xuống cho hợp với nền đen (tùy chọn) */
+.dropdown-menu {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Hiệu ứng mượt mà khi hiện ra */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* xóa gach chân*/
+.navbar-nav a {
+    text-decoration: none !important;
+}
+/*Placehoder*/
+.search-input::placeholder {
+    color: #d1d1d1 !important; /* Màu trắng nhẹ giống menu */
+    opacity: 0.8;
 }
