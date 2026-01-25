@@ -1,5 +1,48 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
 @{
+	Layout = "_Layout";
+	ViewData["Title"] = "Đăng Ký";
 }
+
+<div class="container-fluid bg-light" style="min-height: 80vh; display: flex; align-items: center;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-6">
+                <div class="card border-0 shadow-lg rounded-0">
+                    <div class="card-body p-5">
+                        <h1 class="text-center mb-5 fw-light text-uppercase" style="letter-spacing: 4px;">Đăng Ký</h1>
+
+                        <form asp-controller="Account" asp-action="SignUp" method="post">
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold text-uppercase">Email</label>
+                                <input type="email" name="Email" class="form-control rounded-0 border-dark py-3" placeholder="example@gmail.com" required />
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold text-uppercase">Tên Đăng Nhập</label>
+                                <input type="text" name="Username" class="form-control rounded-0 border-dark py-3" placeholder="Username" required />
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label class="form-label small fw-bold text-uppercase">Mật Khẩu</label>
+                                    <input type="password" name="Password" class="form-control rounded-0 border-dark py-3" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold text-uppercase">Xác Nhận</label>
+                                    <input type="password" name="ConfirmPassword" class="form-control rounded-0 border-dark py-3" required />
+                                </div>
+                            </div>
+
+                            <div class="d-grid mt-5">
+                                <button type="submit" class="btn btn-dark btn-lg rounded-0 text-uppercase fw-bold py-3" style="letter-spacing: 2px;">
+                                    Tạo Tài Khoản
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -12,7 +12,8 @@
 }
 
 body {
-    display: flex;
+    display:block;
+    flex-direction: column;
     margin-bottom: 60px;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: #333; /* Màu chữ chính cho shop */

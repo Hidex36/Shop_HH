@@ -2,9 +2,14 @@
 
 namespace Web_CK.Controllers
 {
-    public class UsersController : Controller
+    public class AccountController : Controller
     {
-        public IActionResult Index()
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+
+        public IActionResult SignUP()
         {
             return View();
         }
