@@ -14,8 +14,6 @@ namespace Web_CK.Controllers
         {
             return View();
         }
-
-
         public IActionResult About()
         {
             return View("About");
