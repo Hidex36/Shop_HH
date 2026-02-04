@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Web_CK.Models.Categories>
+
+<div class="custom-dropdown-wrapper">
+    @foreach (var item in Model)
+    {
+        <a asp-controller="Category" asp-action="Details" asp-route-id="@item.Id"
+           class="dropdown-item d-flex align-items-center justify-content-between py-2 px-3 category-link">
+
+            <div class="d-flex align-items-center">
+                <span class="dot-indicator me-3"></span>
+                <span class="fw-medium">@item.Name</span>
+            </div>
+
+            <i class="bi bi-arrow-right-short fs-5 arrow-hover opacity-0"></i>
+        </a>
+    }
+</div>
+
+<style>
+    /* CSS nhúng trực tiếp hoặc đưa vào file .css */
+    .custom-dropdown-wrapper {
+        padding: 10px 0;
+        min-width: 260px; /* Chiều rộng tối thiểu */
+    }
+
+    .category-link {
+        transition: all 0.2s ease-in-out;
+        color: #555;
+        border-left: 3px solid transparent; /* Chuẩn bị sẵn viền trái */
+    }
+
+    /* Hiệu ứng chấm tròn */
+    .dot-indicator {
+        height: 6px;
+        width: 6px;
+        background-color: #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s;
+    }
+
+    /* TRẠNG THÁI HOVER */
+    .category-link:hover {
+        background-color: #fff9f9; /* Màu nền hồng siêu nhạt */
+        color: #d9534f; /* Màu đỏ thương hiệu */
+        padding-left: 25px !important; /* Đẩy chữ sang phải */
+        border-left: 3px solid #d9534f; /* Hiện viền trái */
+    }
+
+        .category-link:hover .dot-indicator {
+            background-color: #d9534f; /* Chấm tròn đổi màu đỏ */
+        }
+
+        .category-link:hover .arrow-hover {
+            opacity: 1 !important; /* Hiện mũi tên */
+            transform: translateX(5px); /* Mũi tên bay sang phải */
+            transition: all 0.3s;
+        }
+</style>
